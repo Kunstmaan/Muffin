@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% include head.html %}
+<body class="{{ page.title | downcase | replace: " ", "-" }}">
+
+    <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
+    <!-- Pre Header -->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="pre-header" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include pre-header.html %}
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Image -->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="image--top" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                {% include image--top.html %}
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Header -->
+        <!-- <tr>
+            <td valign="top" align="center" class="center">
+                <table class="header" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include header.html %}
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> -->
+    <!-- Sub Header -->
+       <!--  <tr>
+            <td valign="top" align="center" class="center">
+                <table class="sub-header" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include sub-header.html %}
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> -->
+
+    <!-- Intro -->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="intro" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include intro.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Features-->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="features" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include features.html %}
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- About -->
+        <tr>
+            <td align="top" align="center" class="center">
+                <table class="about" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include about.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Scaffolding grid example -->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="scaffolding" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include scaffolding.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Convinced -->
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="convinced" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include convinced.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    <!-- Block examples -->
+        <!-- <tr>
+            <td valign="top" align="center" class="center">
+                <table class="block-text-image" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include block-text-image.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="block-text-image" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include block-text-image-2.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top" align="center" class="center">
+                <table class="block-text-image" width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="100%" align="center" class="center">
+                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                                {% include block-text-image-3.html %}
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="block-spacer">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> -->
+    </table>
+</body>
+</html>
