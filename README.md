@@ -5,9 +5,6 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 ### Includes
 
 - [Jekyll](http://jekyllrb.com/): Transform your plain text into static websites and blogs.
-- [Bourbon](http://bourbon.io/): A simple and lightweight mixin library for Sass.
-- [Ink](http://zurb.com/ink/) by ZURB: Quickly create responsive HTML emails that work on any device & client. Even Outlook.
-- [Imagemin](https://github.com/gruntjs/grunt-contrib-imagemin): Minify PNG and JPEG images
 - [SFTP Deploy](https://github.com/thrashr888/grunt-sftp-deploy): Grunt task for image deployment over sftp
 - [Premailer](http://premailer.dialect.ca/): Grunt wrapper task for Premailer
 - [Litmus](https://litmus.com/): Grunt task for email previews, analytics and spam filter testing
@@ -25,6 +22,10 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 ```
 bower install
 npm install
+```
+```
+set-up
+  update the .ftppass and config.json files with your account information
 ```
 
 ```
