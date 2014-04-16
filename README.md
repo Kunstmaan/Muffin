@@ -68,3 +68,6 @@ Example for adding a feature:
 
 ### License
 Muffin is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+### Acknowledgements
+Special thanks to [Sven Peeters](https://github.com/svenpeeters) for the groundwork.
