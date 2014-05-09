@@ -223,7 +223,7 @@
 
         this.renameTask('watch', 'doWatch');
 
-        this.registerTask('build', ['clean', 'jshint', 'jekyll', 'sass', 'cssmin', 'copy', 'clean:tmp']);
+        this.registerTask('build', ['clean', 'jshint', 'jekyll', 'sass', 'cssmin', 'copy', 'clean:tmp', 'premailer']);
         this.registerTask('watch', ['build', 'connect', 'doWatch']);
         this.registerTask('test', ['build', 'sftp-deploy', 'premailer', 'litmus']);
         this.registerTask('upload', ['sftp-deploy']);

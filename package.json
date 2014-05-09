@@ -10,7 +10,7 @@
   "author": "Kunstmaan",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "~0.4.4",
     "underscore": "~1.5.2",
     "grunt-contrib-jshint": "~0.8.0",
     "grunt-contrib-watch": "~0.5.3",
