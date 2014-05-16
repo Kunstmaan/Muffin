@@ -51,6 +51,8 @@ header-img: "muffin-tight.png"
 header-img-alt: "Muffin"
 image--top: "coding.png"
 image--top-alt: "spaceman"
+video-block-content: "video-content.png"
+video-block-fallback: "video-fallback.png"
 
 # 2.1 Body
 
@@ -78,7 +80,7 @@ cta-img-alt: "cta"
 
 
 ####################################
-# 2.0 Links                        #
+# 3.0 Links                        #
 ####################################
 
 # 3.1 Header
@@ -91,3 +93,10 @@ header-link: "#"
 convinced-download-link: "http://git.kunstmaan.be/kunstmaan/muffin"
 
 cta-link: "#"
+
+####################################
+# 4.0 Video                        #
+####################################
+
+video: "muffin.m4v"
+
