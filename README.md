@@ -8,6 +8,7 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 - [SFTP Deploy](https://github.com/thrashr888/grunt-sftp-deploy): Grunt task for image deployment over sftp
 - [Premailer](http://premailer.dialect.ca/): Grunt wrapper task for Premailer
 - [Litmus](https://litmus.com/): Grunt task for email previews, analytics and spam filter testing
+- A [demo project](https://github.com/Kunstmaan/Muffin/tree/master/demo) with pre-coded components (including: basic text, basic images, video backgrounds, ...)
 
 ### Requirements
 
@@ -19,17 +20,27 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 
 ### Getting Started
 
-```
-bower install
-npm install
-```
-```
-set-up
-  update the .ftppass and config.json files with your account information
-```
+#### Setting up a new project
+- download Muffin: using the git clone url, downloading the zip file or by using `bower install Muffin`.
+- copy the contents of the startkit directory to your project directory.
+- Update the .ftppass and config.json files with your litmus account and ftp server information.
+- Update the width of your design in the following files: `scss/config/_main-setup.scss, _data/global.yml & _includes/head.html`
+- Create a new template in the `_layouts` directory or use the default one already in there.
+  - If you make a new template: update the layout value of the index.html file in the root of your directory.
+- In this template file we're going to include our different html components from the `_includes` folder, so all your seperate html components should go into this folder.
+- Add your data in the `_data` directory
+  - You'll see a global data which is used for global variables (ga-tags, language, etc) and a language specific .yml file which is where all your copy, language specific images, ... will go.
+  - Need a different language? Just add a new yml file and link to this in the global.yml file, instead of the current language.
+  - To add this to your project you can use this variable structure:
+    ex. `{{ site.data.[site.data.global.lang].header }}` or for an image: `<img class="image--full-width" src="{{ site.data.global.img-path }}{{ site.data.[site.data.global.lang].header-image }}" alt="{{ site.data.[site.data.global.lang].header-image--alt }}"/>`
+- Run `grunt watch` to preview your code in the browser.
+- Done coding and want to test your mail? Run `grunt test`.This will trigger different taks: sftp-deploy will upload your assets, premailer will inline all your styling and a test e-mail will be sent to litmus.
+  - Make sure that you've updated your global image path's and/or video path's though!
+  - You can also just run `grunt build` if you want to inline your code but don't want to test it with litmus.
+- The finished, inlined, code (after running `grunt build` or `grunt test`) will be located in a _dist folder as a `index.min.html` file.
 
+#### Available tasks
 ```
-Available tasks
         jshint  Validate files with JSHint. *
        connect  Start a connect web server. *
         jekyll  This triggers the `jekyll` command. *
@@ -65,6 +76,8 @@ Example for adding a feature:
 - when done, make a pull-request from your feature branch to develop
 - after the pull-request is accepted, do `git flow feature finish -your feature name-`
 
+##### File Structure
+When adding functionality to Muffin please make sure to update the demo files aswell.
 
 ### License
 Muffin is licensed under the [MIT license](http://opensource.org/licenses/MIT).
