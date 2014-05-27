@@ -42,7 +42,7 @@
             config: grunt.file.readJSON('config.json'),
 
             clean: {
-                dist: ['_site'],
+                dist: ['_dist'],
                 tmp: ['.tmp']
             },
 
@@ -52,7 +52,7 @@
                         expand: true,
                         dot: true,
                         cwd: '.tmp/',
-                        dest: '_site/',
+                        dest: '_dist/',
                         src: '*/*'
                     }]
                 },
@@ -84,7 +84,7 @@
                     tasks: ['jshint']
                 },
                 jekyll: {
-                    files: [APP.jekyll, '!_site/' + APP.jekyll],
+                    files: [APP.jekyll, '!_dist/' + APP.jekyll],
                     tasks: ['jekyll', 'copy']
                 },
                 styles: {
@@ -111,7 +111,7 @@
                             return [
                                 require('connect-livereload')({
                                     port: 35728
-                                }), mountFolder(connect, './_site')
+                                }), mountFolder(connect, './_dist')
                             ];
                         }
                     }
@@ -121,7 +121,7 @@
             jekyll: {
                 dist: {
                     options: {
-                        dest: '_site'
+                        dest: '_dist'
                     }
                 }
             },
@@ -167,7 +167,7 @@
                         port: '<%= config.ftp.port %>',
                         authKey: 'default'
                     },
-                    src: '_site/img',
+                    src: '_dist/img',
                     dest: '<%= config.ftp.dest %>'
                 }
             },
@@ -179,14 +179,14 @@
                         preserveStyles: true
                     },
                     files: {
-                        '_site/index.min.html': ['_site/index.html']
+                        '_dist/index.min.html': ['_dist/index.html']
                     }
                 }
             },
 
             litmus: {
                 test: {
-                    src: ['_site/index.min.html'],
+                    src: ['_dist/index.min.html'],
                     options: {
                         encodeSpecialChars: true,
                         username: '<%= config.litmus.username %>',
