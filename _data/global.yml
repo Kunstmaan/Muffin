@@ -13,6 +13,7 @@ lang: "en"
 type: " "
 mail-width: "640" # Use the same value as in the main-setup.scss file in the scss/config folder.
 img-path: "img/"
+video-path: "video/"
 ga-tag: " "
 
 # 2.0 Fixed Data (all templates | all languages)

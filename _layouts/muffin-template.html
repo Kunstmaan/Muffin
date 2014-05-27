@@ -18,15 +18,13 @@
                 </table>
             </td>
         </tr>
-    <!-- Image -->
+    <!-- Video Header -->
         <tr>
             <td valign="top" align="center" class="center">
-                <table class="image--top" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <table class="videowrapper" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
-                        <td width="100%" align="center" class="center">
-                            <table class="table__container" width="100%" cellpadding="0" cellspacing="0" border="0">
-                                {% include image--top.html %}
-                            </table>
+                        <td class="videowrapper--td" width="100%" align="center" class="center" bgcolor="#2adae3">
+                            {% include video.html %}
                         </td>
                     </tr>
                 </table>
@@ -38,22 +36,8 @@
                 <table class="header" width="100%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
                         <td width="100%" align="center" class="center">
-                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
+                            <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
                                 {% include header.html %}
-                            </table>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr> -->
-    <!-- Sub Header -->
-       <!--  <tr>
-            <td valign="top" align="center" class="center">
-                <table class="sub-header" width="100%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <td width="100%" align="center" class="center">
-                            <table class="table__container--padded" width="{{ site.data.global.mail-width }}" cellpadding="0" cellspacing="0" border="0">
-                                {% include sub-header.html %}
                             </table>
                         </td>
                     </tr>
