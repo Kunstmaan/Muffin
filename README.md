@@ -8,7 +8,7 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 - [SFTP Deploy](https://github.com/thrashr888/grunt-sftp-deploy): Grunt task for image deployment over sftp
 - [Premailer](http://premailer.dialect.ca/): Grunt wrapper task for Premailer
 - [Litmus](https://litmus.com/): Grunt task for email previews, analytics and spam filter testing
-- A [demo project](docs/demo) with pre-coded components (including: basic text, basic images, video backgrounds, ...)
+- A [demo project](/demo) with pre-coded components (including: basic text, basic images, video backgrounds, ...)
 
 ### Requirements
 
