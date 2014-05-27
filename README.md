@@ -21,8 +21,8 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 ### Getting Started
 
 #### Setting up a new project
-- download Muffin: using the git clone url, downloading the zip file or by using `bower install Muffin`.
-- copy the contents of the startkit directory to your project directory.
+- Download Muffin: using the git clone url, downloading the zip file or by using `bower install Muffin`.
+- Copy the contents of the startkit directory to your project directory.
 - Update the .ftppass and config.json files with your litmus account and ftp server information.
 - Update the width of your design in the following files: `scss/config/_main-setup.scss, _data/global.yml & _includes/head.html`
 - Create a new template in the `_layouts` directory or use the default one already in there.
@@ -54,9 +54,9 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
         litmus  Send test to Litmus *
        doWatch  Run predefined tasks whenever watched files change.
          build  Alias for "clean", "jshint", "jekyll", "sass", "cssmin",
-                "imagemin", "copy", "clean:tmp" tasks.
+                "imagemin", "copy", "clean:tmp", "premailer" tasks.
          watch  Alias for "build", "connect", "doWatch" tasks.
-          test  Alias for "build", "sftp-deploy", "premailer", "litmus" tasks.
+          test  Alias for "build", "sftp-deploy", "litmus" tasks.
        default  default
 ```
 
