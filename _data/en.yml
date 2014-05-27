@@ -52,6 +52,7 @@ header-img-alt: "Muffin"
 image--top: "coding.png"
 image--top-alt: "spaceman"
 video-block-content: "video-content.png"
+video-block-content-alt: "Muffin"
 video-block-fallback: "video-fallback.png"
 
 # 2.1 Body
