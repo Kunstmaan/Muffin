@@ -31,8 +31,8 @@
             'js': ['Gruntfile.js'],
             'jekyll': '{*/,}{*/,}{*/,}*{html,js,png,jpg,jpeg}',
             'scss': ['scss/{*/,}*.scss'],
-            'ink': ['vendors/ink/css/ink.css'],
-            'img': ['img/**/*.{png,jpg,jpeg,gif,webp}']
+            'img': ['img/**/*.{png,jpg,jpeg,gif,webp}'],
+            'video': ['video/**/*.{m4v,mp4,.ogg,.ogv}']
         };
 
         this.initConfig({
@@ -95,6 +95,10 @@
                     files: APP.img,
                     tasks: ['copy']
                 },
+                videos: {
+                    files: APP.video,
+                    tasks: ['copy']
+                },
                 options: {
                     livereload: 35728,
                     nospawn: true
@@ -140,7 +144,7 @@
             cssmin: {
                 dist: {
                     files: {
-                        '.tmp/css/main.css': [APP.ink, '.tmp/css/main.css']
+                        '.tmp/css/main.css': ['.tmp/css/main.css']
                     }
                 }
             },

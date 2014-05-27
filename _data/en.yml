@@ -4,6 +4,7 @@
 #  1.0 Headers                     #
 #  2.0 Images                      #
 #  3.0 Links                       #
+#  4.0 Video                       #
 ####################################
 
 ####################################
@@ -14,90 +15,27 @@
 
 intro__header: "Holy blueberry Batman!"
 intro__sub-header: "Coding e-mails has never been this easy!"
-features__header: "Some key features."
-feature--one__header: "Grunt tasks."
-feature--two__header: "Sass."
-feature--three__header: "Automated testing."
-easy-install__header: "Easy install."
-dependencies__header: "Dependencies."
-convinced__header: "Convinced?"
-questions__header: "Questions?"
-block-text-image__header: "Lorem ipsum dolor sit."
 
 # 1.2 Copy
 
 intro__text--p-1: "Dreading the moment when finding out you have to code an e-mail? Getting lost in the endless nesting of tables whilst trying to get some responsive behaviour going on, only to find out you forgot to close a table tag? <br/><br/>These are only some of the challenges that you have to face when coding a decent, cross client e-mail."
-
-feature--sass__text: "Harness all the power of sass for your mails, without having to worry about mail clients. The Premailer grunt task inlines everything you write."
-feature--vars__text: "Make use of variables for all your data, easily change copy, links, tags, ... without the fuss of searching through miles of code."
-feature--test__text: "Send your code to litmus for testing when you're done."
-feature--grid__text: "Use our grid as a foundation to build your responsive mail."
-feature--modular__text: "Keep your code clean and tidy with our system of includes."
-feature--upload__text: "Deploy all your images in one go with sftp deploy."
-about__text: "With <span class='highlight'>Muffin</span> we tried to lighten the burden a bit by giving you a <span class='highlight'>solid base</span> to work with. Imagine coding an e-mail with <span class='highlight'>sass</span>, which is compiled and inlined for you by Grunt. Or making use of <span class='highlight'>variables</span> for all your data, making it easier, for instance, to add some google analytics tags or make a last minute copy change. We also included a <span class='highlight'>simplified grid</span> system, which should make adding <span class='highlight'>responsive functionality</span> to your mail, a lot easier. <br/><br/>Finally when your mail is ready, we've included a task which <span class='highlight'>automatically sends your e-mail to Litmus for testing</span>."
-
-block-text-image__copy: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu scelerisque eros. In quis fermentum mi. Maecenas fringilla nibh mi, eu imperdiet felis placerat eu. Pellentesque consequat, turpis id venenatis facilisis, erat velit elementum ante, sed aliquam lectus sapien at enim. Ut varius id diam a tincidunt. Suspendisse quam odio, malesuada a lorem vel, lacinia accumsan justo. Nam interdum lacus urna, sed tincidunt ligula cursus sit amet."
 
 
 ####################################
 # 2.0 Images                       #
 ####################################
 
-# 2.1 Header
-
-pre-header-img: "kunstmaan.png"
-pre-header-alt: "Kunstmaan"
-header-img: "muffin-tight.png"
-header-img-alt: "Muffin"
-image--top: "coding.png"
-image--top-alt: "spaceman"
-video-block-content: "video-content.png"
-video-block-content-alt: "Muffin"
-video-block-fallback: "video-fallback.png"
-
-# 2.1 Body
-
-feature-sass-img: "feature-sass--alt.png"
-feature-sass-img-alt: "sass"
-feature-var-img: "feature-var--alt.png"
-feature-var-img-alt: "variables"
-feature-test-img: "feature-test--alt.png"
-feature-test-img-alt: "automated testing"
-feature-grid-img: "feature-grid--alt.png"
-feature-grid-img-alt: "Responsive grid"
-feature-upload-img: "feature-upload--alt.png"
-feature-test-img-alt: "Upload your images"
-feature-modular-img: "feature-modular--alt.png"
-feature-modular-img-alt: "Modulary built"
-
-convinced-img: "arrow-down--white.png"
-convinced-img-alt: "Convinced?"
-convinced-download-img: "button.png"
-convinced-download-img-alt: "download"
-block-text-image__image: "image__body--placeholder.jpg"
-block-text-image__image-alt: "Placeholder"
-cta-img: "cta.png"
-cta-img-alt: "cta"
 
 
 ####################################
 # 3.0 Links                        #
 ####################################
 
-# 3.1 Header
 
-pre-header-link: "http://www.kunstmaan.be/"
-header-link: "#"
-
-# 3.1 Body
-
-convinced-download-link: "http://git.kunstmaan.be/kunstmaan/muffin"
-
-cta-link: "#"
 
 ####################################
 # 4.0 Video                        #
 ####################################
 
-video: "muffin.m4v"
+
 

@@ -1,0 +1,13 @@
+.block-text-image__header {
+    color: $red;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    @media (max-width: 640px) {
+        padding-top: 10px;
+    }
+}
+
+.block-text-image {
+    border-bottom: 1px solid $lighterGrey
+}
