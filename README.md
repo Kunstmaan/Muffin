@@ -26,7 +26,7 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 - Update the .ftppass and config.json files with your litmus account and ftp server information.
 - Update the width of your design in the following files: `scss/config/_main-setup.scss`, `_data/global.yml` & `_includes/head.html`
 - Create a new template in the `_layouts` directory or use the default one already in there.
-  - If you make a new template: update the layout value of the index.html file in the root of your directory.
+  - If you decide to make a new template make sure to update the layout value of the index.html file in the root of your directory.
 - In this template file we're going to include our different html components from the `_includes` folder, so all your seperate html components should go into this folder.
 - Add your data in the `_data` directory
   - You'll see a global data which is used for global variables (ga-tags, language, etc) and a language specific .yml file which is where all your copy, language specific images, ... will go.
