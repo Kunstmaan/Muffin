@@ -32,7 +32,14 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
   - You'll see a global data which is used for global variables (ga-tags, language, etc) and a language specific .yml file which is where all your copy, language specific images, ... will go.
   - Need a different language? Just add a new yml file and link to this in the global.yml file, instead of the current language.
   - To add this to your project you can use this variable structure:
-    ex. ```{{ site.data.[site.data.global.lang].header }}``` or for an image: ```<img class="image--full-width" src="{{ site.data.global.img-path }}{{ site.data.[site.data.global.lang].header-image }}" alt="{{ site.data.[site.data.global.lang].header-image--alt }}"/>```
+    ex. 
+```
+{{ site.data.[site.data.global.lang].header }}
+``` 
+or for an image: 
+```
+<img class="image--full-width" src="{{ site.data.global.img-path }}{{ site.data.[site.data.global.lang].header-image }}" alt="{{ site.data.[site.data.global.lang].header-image--alt }}"/>
+```
 - Run `grunt watch` to preview your code in the browser.
 - Done coding and want to test your mail? Run `grunt test`.This will trigger different tasks: sftp-deploy will upload your assets, premailer will inline all your styling and a test e-mail will be sent to litmus.
   - Make sure that you've updated your global image path's and/or video path's though!
