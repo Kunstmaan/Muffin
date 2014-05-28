@@ -1,6 +1,6 @@
 {
   "name": "Muffin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Muffin is a Grunt scaffolding tool for building static email templates",
   "private": true,
   "repository": {
