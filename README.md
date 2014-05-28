@@ -22,7 +22,8 @@ Muffin is a Grunt scaffolding tool to build static email templates with modern w
 
 #### Setting up a new project
 - Download Muffin: using the git clone url, downloading the zip file or by using `bower install Muffin`.
-- Copy the contents of the startkit directory to your project directory.
+- Copy and rename the startkit directory to your project directory.
+- Run `npm install` in this folder.
 - Update the .ftppass and config.json files with your litmus account and ftp server information.
 - Update the width of your design in the following files: `scss/config/_main-setup.scss`, `_data/global.yml` & `_includes/head.html`
 - Create a new template in the `_layouts` directory or use the default one already in there.
