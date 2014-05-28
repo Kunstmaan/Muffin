@@ -1,8 +1,7 @@
 {
   "name": "Muffin",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "ignore": [
-    "**/.*",
     "node_modules",
     "vendors"
   ]
