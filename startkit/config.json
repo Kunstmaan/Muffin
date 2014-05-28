@@ -1,0 +1,12 @@
+{
+    "ftp": {
+        "host": "host",
+        "port": "port",
+        "dest": "folder"
+    },
+    "litmus": {
+        "username": "username",
+        "password": "password",
+        "url": "https://company.litmus.com"
+    }
+}

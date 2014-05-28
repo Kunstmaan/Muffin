@@ -1,0 +1,27 @@
+.intro {
+    .wrapper-content {
+        padding: 40px 0 40px 0;
+    }
+}
+.intro__header {
+    color: $blue;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150%;
+}
+.intro__sub-header {
+    color: $blue;
+    font-size: 20px;
+    font-weight: normal;
+
+    text-align: center;
+}
+.intro__copy {
+    font-size: 18px;
+    line-height: 29px;
+    color: $lightGrey;
+    padding-top: 20px;
+    text-align: center;
+}

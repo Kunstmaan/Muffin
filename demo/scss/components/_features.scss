@@ -1,0 +1,20 @@
+.features {
+    background: $lighterGrey;
+}
+.features__header {
+    color: $red;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.features__text {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: $baseLineHeight;
+    color: $darkGrey;
+    text-align: left;
+}

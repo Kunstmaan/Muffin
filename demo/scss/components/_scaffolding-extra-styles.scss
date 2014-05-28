@@ -1,0 +1,58 @@
+.col-scaffolding-ex-12 {
+    width: $mail-width;
+}
+.col-scaffolding-ex-11 {
+    width: $mail-width - (($mail-width - ($gutter-width*11)) / 12);
+}
+.col-scaffolding-ex-10 {
+    width: ((($mail-width - ($gutter-width*3) ) / 4) + (($mail-width - ($gutter-width*5) ) / 6)) + ((($mail-width - ($gutter-width*3) ) / 4) + (($mail-width - ($gutter-width*5) ) / 6));
+}
+.col-scaffolding-ex-9 {
+    width: ((($mail-width - ($gutter-width*2) ) / 3) + (($mail-width - ($gutter-width*2) ) / 3)) + (($mail-width - ($gutter-width*11) ) / 12);
+}
+.col-scaffolding-ex-8 {
+    width: (($mail-width - ($gutter-width*2) ) / 3) + (($mail-width - ($gutter-width*2) ) / 3);
+}
+.col-scaffolding-ex-7 {
+    width: (($mail-width - ($gutter-width*3) ) / 4) + (($mail-width - ($gutter-width*2) ) / 3);
+}
+.col-scaffolding-ex-6 {
+    width: ($mail-width - $gutter-width) / 2;
+}
+.col-scaffolding-ex-5 {
+    width: (($mail-width - ($gutter-width*3) ) / 4) + (($mail-width - ($gutter-width*5) ) / 6);
+}
+.col-scaffolding-ex-4 {
+    width: ($mail-width - ($gutter-width*2) ) / 3;
+}
+.col-scaffolding-ex-3 {
+    width: ($mail-width - ($gutter-width*3) ) / 4;
+}
+.col-scaffolding-ex-2 {
+    width: ($mail-width - ($gutter-width*5) ) / 6;
+}
+.col-scaffolding-ex-1 {
+    width: ($mail-width - ($gutter-width*11) ) / 12;
+}
+
+.scaffolding {
+    td[class="col-scaffolding-ex-1"], td[class="col-scaffolding-ex-2"], td[class="col-scaffolding-ex-3"], td[class="col-scaffolding-ex-4"], td[class="col-scaffolding-ex-5"], td[class="col-scaffolding-ex-6"], td[class="col-scaffolding-ex-7"], td[class="col-scaffolding-ex-8"], td[class="col-scaffolding-ex-9"], td[class="col-scaffolding-ex-10"], td[class="col-scaffolding-ex-11"], td[class="col-scaffolding-ex-12"] {
+        background: $red;
+        color: $white;
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    td[class="table__columns-wrapper"] {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 640px){
+    /* Stacks the cols on top of each other at the breakpoint */
+    td[class="col-scaffolding-ex-1"], td[class="col-scaffolding-ex-2"], td[class="col-scaffolding-ex-3"], td[class="col-scaffolding-ex-4"], td[class="col-scaffolding-ex-5"], td[class="col-scaffolding-ex-6"], td[class="col-scaffolding-ex-7"], td[class="col-scaffolding-ex-8"], td[class="col-scaffolding-ex-9"], td[class="col-scaffolding-ex-10"], td[class="col-scaffolding-ex-11"], td[class="col-scaffolding-ex-12"] {
+        width: 100% !important;
+        display: block;
+    }
+}
