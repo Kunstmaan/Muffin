@@ -1,4 +1,4 @@
-## Muffin v0.2.0
+## Muffin v0.2.1
 
 Muffin is a Grunt scaffolding tool to build static email templates with modern workflow.
 
